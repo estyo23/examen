@@ -5,6 +5,6 @@ $nuevomascota = new mascotas();
 
 if(isset($_POST['btnGuardar']))
 {
-    $nuevomascota->Guardarmascotas($_POST['apellidos'],$_POST['nombre'],$_POST['direccion'],$_POST['telefono']);
+    $nuevomascota->Guardarmascotas($_POST['IdMascota'],$_POST['Mascotas']);
     header('Location: VistaMascota.php');
 }
